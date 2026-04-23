@@ -45,8 +45,8 @@ const PartnersSection = () => {
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-background to-transparent z-10" />
 
         {/* Scrolling track */}
-        <div className="flex animate-scroll">
-          {[...partners, ...partners].map((partner, i) => (
+        <div className="flex animate-scroll w-max">
+          {[...partners, ...partners, ...partners].map((partner, i) => (
             <div
               key={`${partner.name}-${i}`}
               className="flex-shrink-0 mx-4 flex items-center justify-center w-40 h-28"
