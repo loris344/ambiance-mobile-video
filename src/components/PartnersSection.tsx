@@ -49,13 +49,13 @@ const PartnersSection = () => {
           {[...partners, ...partners].map((partner, i) => (
             <div
               key={`${partner.name}-${i}`}
-              className="flex-shrink-0 mx-8 flex items-center justify-center w-32 h-20 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              className="flex-shrink-0 mx-4 flex items-center justify-center w-40 h-28"
             >
               <img
                 src={partner.logo}
                 alt={partner.name}
                 loading="lazy"
-                className="max-h-16 max-w-full object-contain"
+                className="max-h-24 max-w-full object-contain"
               />
             </div>
           ))}
