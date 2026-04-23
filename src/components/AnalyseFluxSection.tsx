@@ -15,7 +15,7 @@ const AnalyseFluxSection = () => {
             Notre outil d'<span className="gradient-text">analyse de flux</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Un dashboard interne pour estimer l'audience, analyser les CSP et piloter vos campagnes en temps réel.
+            Un dashboard interne pour estimer l'audience, analyser les CSP et piloter vos campagnes en temps réel avec vous.
           </p>
         </motion.div>
 
