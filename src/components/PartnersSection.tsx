@@ -55,7 +55,7 @@ const PartnersSection = () => {
                 src={partner.logo}
                 alt={partner.name}
                 loading="lazy"
-                className="max-h-24 max-w-full object-contain"
+                className="max-h-24 max-w-full object-contain rounded-lg"
               />
             </div>
           ))}
