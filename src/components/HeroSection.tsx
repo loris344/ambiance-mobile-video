@@ -15,8 +15,8 @@ const HeroSection = () => {
           playsInline
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/60 to-background/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-background/20" />
       </div>
 
       <div className="container relative z-10 py-20">
