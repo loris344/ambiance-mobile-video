@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 const links = [
   { label: "Avantages", href: "#avantages" },
   { label: "Fonctionnement", href: "#fonctionnement" },
+  { label: "Analyse de Flux", href: "/analyse-de-flux" },
   { label: "Réalisations", href: "#realisations" },
   { label: "Contact", href: "#contact" },
 ];
