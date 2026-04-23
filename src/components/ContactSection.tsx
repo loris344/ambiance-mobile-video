@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { useState } from "react";
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({ nom: "", email: "", telephone: "", message: "" });
+  const [formData, setFormData] = useState({ nom: "", email: "", message: "" });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const subject = encodeURIComponent("Demande de devis – Affichage mobile humain");
     const body = encodeURIComponent(
-      `Nom: ${formData.nom}\nTéléphone: ${formData.telephone}\n\n${formData.message}`
+      `Nom: ${formData.nom}\n\n${formData.message}`
     );
-    window.location.href = `mailto:contact@example.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:contact@pixel-walk.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -55,13 +55,6 @@ const ContactSection = () => {
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               className="w-full px-5 py-4 rounded-lg bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/60 transition-colors"
             />
-            <input
-              type="tel"
-              placeholder="Téléphone"
-              value={formData.telephone}
-              onChange={(e) => setFormData({ ...formData, telephone: e.target.value })}
-              className="w-full px-5 py-4 rounded-lg bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/60 transition-colors"
-            />
             <textarea
               placeholder="Décrivez votre projet (lieu, dates, nombre d'ambassadeurs…)"
               rows={5}
@@ -90,16 +83,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold mb-1">Email</h4>
-                <p className="text-muted-foreground">contact@example.com</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                <Phone className="w-5 h-5 text-primary" />
-              </div>
-              <div>
-                <h4 className="font-semibold mb-1">Téléphone</h4>
-                <p className="text-muted-foreground">+33 1 23 45 67 89</p>
+                <p className="text-muted-foreground">contact@pixel-walk.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
