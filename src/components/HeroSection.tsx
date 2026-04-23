@@ -1,13 +1,20 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
-import heroImg from "@/assets/humain1.jpg";
+import heroVideo from "@/assets/hero-video.mp4";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background image with overlay */}
+      {/* Background video with overlay */}
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Affichage mobile humain en action" className="w-full h-full object-cover" />
+        <video
+          src={heroVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/60" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/40" />
       </div>
